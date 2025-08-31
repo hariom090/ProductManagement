@@ -1,0 +1,111 @@
+.admin-panel {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+}
+
+/* ✅ Topbar (always visible) */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background: #1f2937;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 1000;
+}
+
+.panel-title {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ✅ Menu button */
+/* ✅ Menu button (visible only on mobile) */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: block; /* show by default */
+}
+
+/* Hide menu button on desktop */
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 55px; /* below topbar */
+  left: -220px;
+  width: 180px;
+  height: 100%;
+  background: #1f2937;
+  color: white;
+  padding: 20px 0;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  padding: 0 15px;
+}
+
+.sidebar ul li a,
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  color: #3b82f6;
+}
+
+.sidebar ul li svg {
+  margin-right: 10px;
+}
+
+/* ✅ Content */
+.content {
+  flex: 1;
+  padding: 70px 0px 0px; /* push below topbar */
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+  width: 100%;
+}
+
+/* Desktop view - sidebar always visible */
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0;
+  }
+  .content {
+    margin-left: 220px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}

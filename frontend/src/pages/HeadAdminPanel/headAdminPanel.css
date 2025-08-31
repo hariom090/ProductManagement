@@ -1,0 +1,87 @@
+.head-admin-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.head-admin-container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Table Styling */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.admin-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background 0.3s ease;
+}
+
+/* Select Role Dropdown */
+.admin-table select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.admin-table select:hover {
+  border-color: #555;
+}
+
+/* Delete Button */
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Access Denied Message */
+.access-denied {
+  margin-top: 50px;
+  font-size: 22px;
+  color: #b30000;
+  font-weight: bold;
+  text-align: center;
+}
